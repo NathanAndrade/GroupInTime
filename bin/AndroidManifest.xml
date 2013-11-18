@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.pandoapps.projetodefault"
+    android:installLocation="preferExternal"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="18" />
+
+    <permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+	<permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />s
+    
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="com.pandoapps.SplashScreen"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        
+        <activity
+            android:name="com.pandoapps.Login"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="com.pandoapps.Login" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.pandoapps.Projeto"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="com.pandoapps.Projeto" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+		<activity
+            android:name="com.pandoapps.Pando"
+            android:launchMode="singleInstance"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="com.pandoapps.Pando" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>  
+        <activity
+          	android:name="com.pandoapps.requester.DemoRequester"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="com.pandoapps.requester.DemoRequester" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+          android:name="com.pandoapps.requester.ClimaRequester"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="pandoapps.requester.TemperaturaRequester" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>       
+        <activity
+          android:name="com.pandoapps.abas.AbasController"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="pandoapps.abas.AbasController" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+          android:name="com.pandoapps.abas.ConteudoController"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="pandoapps.abas.ConteudoController" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
