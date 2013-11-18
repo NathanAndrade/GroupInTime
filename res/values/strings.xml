@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Projeto Default</string>
+    <string name="action_settings">Settings</string>
+    <string name="pando">Pandô Mobile APPs</string>
+
+    <!-- basics -->
+    <string name="basic_pandoApps">Pandô APPs</string>
+    <string name="basic_client">Petrobras</string>
+    <string name="basic_home">Home</string>
+    <string name="basic_login">Login</string>
+    <string name="basic_pass">Senha</string>
+    <string name="basic_ok">OK</string>
+    <string name="basic_save">Salvar</string>
+    <string name="basic_deny">Negar</string>
+    <string name="basic_confirm">Confirmar</string>
+    <string name="basic_cancel">Cancelar</string>
+    <string name="basic_name">Nome</string>
+    <string name="basic_date">Data</string>
+    
+    <!-- Pandô Apps -->
+    <string name="title_pando">Pandô APPs</string>
+    <string name="pando_developedBy">Desenvolvido por Pandô APPs</string>
+    <string name="pando_contact">Contato: contato@com.pandoapps.com.br</string>
+    <string name="pando_facebook">Facebook</string>
+    
+    <!-- Erros -->
+    <string name="Erro_createDatabase">Erro ao criar o banco de dados</string>
+    <string name="Erro_copyDatabase">Erro ao copiar o banco de dados</string>
+    <string name="Erro_UserNotFoundTitle">Usuário não encontrado</string>
+    <string name="Erro_UserNotFoundMessage">Login ou senha inválidos</string>
+    
+    <!-- Requesters -->
+    <string name="Requester_Wait">Aguarde</string>
+    
+</resources>

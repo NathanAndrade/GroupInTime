@@ -1,0 +1,9 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item android:id="@+id/pandoMenu"
+          android:icon="@drawable/pando_ico"
+          android:title="@string/basic_pandoApps"
+          android:showAsAction="always"/>
+
+
+</menu>

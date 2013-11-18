@@ -1,0 +1,71 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent" 
+    android:layout_height="fill_parent"
+    style="@style/page"
+    tools:context=".Login"
+    android:weightSum="4"
+    android:orientation="vertical" >
+
+    <LinearLayout 
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+	    <RelativeLayout
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content" >
+	        
+	        <ImageView
+	            android:id="@+id/pandoLogo"
+	            android:layout_width="match_parent"
+	            android:layout_height="wrap_content"
+	            android:layout_alignParentRight="true"
+	            android:layout_alignParentTop="true"
+	            android:contentDescription="@string/basic_pandoApps"
+	            android:src="@drawable/pando" />
+	        
+	    </RelativeLayout>
+	</LinearLayout>
+	<LinearLayout 
+	    android:layout_width="match_parent"
+	    android:layout_height="fill_parent"
+	    android:orientation="vertical"
+	    android:layout_weight="3"
+	    android:gravity="top|center_horizontal">
+
+		<EditText
+		    android:id="@+id/edtLogin"
+		    android:layout_width="150dp"
+		    android:layout_height="wrap_content"
+		    android:layout_gravity="center"
+		    android:hint="@string/basic_login"
+		    android:text="t"
+		    android:inputType="text" >
+
+		    <requestFocus/>
+
+		</EditText>
+
+		<EditText
+		    android:id="@+id/edtPass"
+		    android:layout_width="150dp"
+		    android:layout_height="wrap_content"
+		    android:layout_gravity="center"
+		    android:hint="@string/basic_pass"
+		    android:text="t"
+		    android:inputType="textPassword" >
+
+		</EditText>
+
+		<ImageView
+		    android:layout_width="50dp"
+		    android:layout_height="50dp"
+		    android:layout_gravity="right"
+		    android:contentDescription="@string/basic_confirm"
+		    android:onClick="checkLogin"
+		    android:src="@drawable/arrow" />
+
+	</LinearLayout>
+
+</LinearLayout>
